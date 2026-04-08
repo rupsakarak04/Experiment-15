@@ -84,7 +84,7 @@ Centers data around mean = 0
 
 9. Dummy Encoding: Drops first column to avoid multicollinearity
 
-Commands & Functions Used
+## Commands & Functions Used
 
 Function	          Purpose
 
