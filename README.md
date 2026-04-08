@@ -88,19 +88,19 @@ Centers data around mean = 0
 
 Function	          Purpose
 
-pd.DataFrame()	      Create table
+pd.DataFrame()	  -    Create table
 
-pd.read_csv()	      Load dataset
+pd.read_csv()	   -   Load dataset
 
-min(), max()	      Find range
+min(), max()	  -    Find range
 
-mean(), std()	      Statistical calculations
+mean(), std()	  -    Statistical calculations
 
-get_dummies()	      One-hot encoding
+get_dummies()	  -    One-hot encoding
 
-LabelEncoder()        Label encoding
+LabelEncoder()    -    Label encoding
 
-fit_transform()       Fit & convert data
+fit_transform()    -   Fit & convert data
 
 *CONCLUSION:*
 
