@@ -51,16 +51,58 @@ numpy → numerical operations
 )
 (X−X
 min
-	​
-
 )/(X
 max
-	​
-
 −X
 min
-	​
-
 )
+
 Scales Price between 0 and 1
+
+3. Normalizing Multiple Columns: Applies normalization to multiple columns at once
+
+4. Z-Score Normalization: Formula:
+
+(
+𝑋
+−
+𝜇
+)
+/
+𝜎
+(X−μ)/σ
+
+Centers data around mean = 0
+
+5. Decimal Scaling: Divides values by power of 10 and Converts price into scaled-down form
+
+6. Label Encoding: Converts categories into numeric labels
+
+7. Multiple Column Encoding: Encodes multiple categorical columns
+
+8. One Hot Encoding: Creates binary columns for each payment method
+
+9. Dummy Encoding: Drops first column to avoid multicollinearity
+
+Commands & Functions Used
+
+Function	          Purpose
+
+pd.DataFrame()	      Create table
+
+pd.read_csv()	      Load dataset
+
+min(), max()	      Find range
+
+mean(), std()	      Statistical calculations
+
+get_dummies()	      One-hot encoding
+
+LabelEncoder()        Label encoding
+
+fit_transform()       Fit & convert data
+
+*CONCLUSION:*
+
+The experiment successfully demonstrates how raw data can be transformed into a structured and machine-friendly format using normalization and encoding techniques. These preprocessing steps are essential in data analysis and machine learning, as they improve model accuracy, reduce bias, and ensure consistency across datasets.
 
