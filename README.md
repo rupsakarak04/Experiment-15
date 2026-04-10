@@ -35,9 +35,8 @@ Formula: $x_{new} = \frac{x_{old}}{x_{max}}$
 
 4. Normalizing Multiple Columns: Applies normalization to multiple columns at once.
 
-5. Z-Score Normalization: Z-score Normalization (Standardization): Transforms data to have a mean of 0 and a standard deviation of 1.
+5. Z-Score Normalization (Standardization): Transforms data to have a mean of 0 and a standard deviation of 1.
 Formula: $x_{new} = \frac{x_{old} - \mu}{\sigma}$
-
 
 6. Decimal Scaling: Divides values by power of 10 and Converts price into scaled-down form
 
