@@ -27,62 +27,27 @@ Dummy Encoding → same as one-hot but drops one column to avoid redundancy
 pandas → data handling
 numpy → numerical operations
 
-2. Min-Max Normalization: Formula:
+2. Min-Max Normalization:  Rescales the data to a fixed range, usually 0 to 1, by subtracting the minimum and dividing by the range.
+Formula: $x_{new} = \frac{x_{old} - x_{min}}{x_{max} - x_{min}}$
 
-(
-𝑋
-−
-𝑋
-𝑚
-𝑖
-𝑛
-)
-/
-(
-𝑋
-𝑚
-𝑎
-𝑥
-−
-𝑋
-𝑚
-𝑖
-𝑛
-)
-(X−X
-min
-)/(X
-max
-−X
-min
-)
+Simple Feature Scaling: Divides each value by the maximum value of that column, resulting in a range between 0 and 1.
+Formula: $x_{new} = \frac{x_{old}}{x_{max}}$ 
 
-Scales Price between 0 and 1
+4. Normalizing Multiple Columns: Applies normalization to multiple columns at once.
 
-3. Normalizing Multiple Columns: Applies normalization to multiple columns at once
+5. Z-Score Normalization: Z-score Normalization (Standardization): Transforms data to have a mean of 0 and a standard deviation of 1.
+Formula: $x_{new} = \frac{x_{old} - \mu}{\sigma}$
 
-4. Z-Score Normalization: Formula:
 
-(
-𝑋
-−
-𝜇
-)
-/
-𝜎
-(X−μ)/σ
+6. Decimal Scaling: Divides values by power of 10 and Converts price into scaled-down form
 
-Centers data around mean = 0
+7. Label Encoding: Converts categories into numeric labels
 
-5. Decimal Scaling: Divides values by power of 10 and Converts price into scaled-down form
+8. Multiple Column Encoding: Encodes multiple categorical columns
 
-6. Label Encoding: Converts categories into numeric labels
+9. One Hot Encoding: Creates binary columns for each payment method
 
-7. Multiple Column Encoding: Encodes multiple categorical columns
-
-8. One Hot Encoding: Creates binary columns for each payment method
-
-9. Dummy Encoding: Drops first column to avoid multicollinearity
+10. Dummy Encoding: Drops first column to avoid multicollinearity
 
 ## Commands & Functions Used
 
